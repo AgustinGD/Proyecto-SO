@@ -6,12 +6,11 @@
 #include <semaphore.h>
 
 
-#define MIN 0
-#define MAX_PRIMERA 2
-#define MAX_BUSINESS 3
-#define MAX_TURISTA 5
+#define MAX_PRIMERA 20
+#define MAX_BUSINESS 30
+#define MAX_TURISTA 50
 
-#define CANT_PASAJEROS 10
+#define CANT_PASAJEROS 150
 
 sem_t sem_primera, sem_business, sem_turista, sem_lleno;
 pthread_mutex_t mutex_subir = PTHREAD_MUTEX_INITIALIZER;
